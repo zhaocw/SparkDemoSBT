@@ -1,6 +1,6 @@
 package com.zhenghao.day2
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{Dataset, SparkSession}
 
 object WordCount2atLocal {
 
