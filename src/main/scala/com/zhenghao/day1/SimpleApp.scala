@@ -11,6 +11,7 @@ object SimpleApp {
     val numBs = textFile.filter(line => line.contains("b")).count()
     println(f"Lines with a: $numAs, Lines with b: $numBs")
     spark.stop()
+
   }
 
 }
