@@ -12,7 +12,7 @@ object ClosureDemo {
     val data = Array(1, 2, 3,4)
     val rdd = sc.parallelize(data)
     rdd.foreach(x => counter += x)
-    println(counter) // ½á¹ûÎª0
+    println(counter)
 
 
 

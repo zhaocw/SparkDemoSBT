@@ -11,7 +11,7 @@ object WordCount2atLocal {
                             .appName("WordCount2")
                             .master("local[2]")
                             .getOrCreate()
-    // textFile是Dataset，推荐使用Dataset
+    // textFile鏄疍ataset锛屾帹鑽愪娇鐢―ataset
     val textFile = spark.read.textFile(inputFile)
 //    val wordCounts = textFile.flatMap(line => line.split(" ")).groupByKey(identity).count()
 //    print(wordCounts)

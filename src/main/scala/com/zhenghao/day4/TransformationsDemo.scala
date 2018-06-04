@@ -24,7 +24,7 @@ object TransformationsDemo {
     val groupRDD = pairRDD.groupByKey()
     groupRDD.collect()
     groupRDD.foreach(println)
-    println(s"分组个数：${groupRDD.count()}")
+    println(s"${groupRDD.count()}")
 
   }
 

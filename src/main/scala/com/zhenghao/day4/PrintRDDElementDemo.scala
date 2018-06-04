@@ -12,10 +12,10 @@ object PrintRDDElementDemo {
     val data = Array(1,2,3,4,5,6)
     val rdd = sc.parallelize(data, 3)
 
-    // ²»ÔÚÇı¶¯³ÌĞòÉÏ£¬¼¯ÈºÏÂ²»»áÏÔÊ¾
+    // ä¸åœ¨é©±åŠ¨ç¨‹åºä¸Šï¼Œé›†ç¾¤ä¸‹ä¸ä¼šæ˜¾ç¤º
     rdd.foreach(println)
 
-    // ÔÚÇı¶¯³ÌĞòÉÏ£¬¿ÉÄÜ»áºÄ¾¡Çı¶¯³ÌĞòÄÚ´æ
+    // åœ¨é©±åŠ¨ç¨‹åºä¸Šï¼Œå¯èƒ½ä¼šè€—å°½é©±åŠ¨ç¨‹åºå†…å­˜
     rdd.collect().foreach(println)
 
     rdd.take(4).foreach(println)

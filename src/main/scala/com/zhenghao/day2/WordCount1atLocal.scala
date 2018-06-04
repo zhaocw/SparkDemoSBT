@@ -10,7 +10,7 @@ object WordCount1atLocal {
     val conf = new SparkConf().setAppName("WordCount1").setMaster("local[2]")
     val sc = new SparkContext(conf)
 
-    // textFileÊÇRDD
+    // textFileæ˜¯RDD
     val textFile = sc.textFile(inputFile)
     val words = textFile.flatMap(line => line.split(" "))
     val wordParis = words.map(word => (word, 1))
