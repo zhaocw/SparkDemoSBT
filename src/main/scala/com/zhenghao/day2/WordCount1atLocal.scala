@@ -16,6 +16,7 @@ object WordCount1atLocal {
     val wordParis = words.map(word => (word, 1))
     val wordCount = wordParis.reduceByKey((a, b) => a + b)
     wordCount.foreach(println)
+
   }
 
 }
